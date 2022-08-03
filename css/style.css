@@ -28,36 +28,37 @@ body{
 
 .imgcard{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 5px 0 10px 0;
 }
 
-figure{
+.img-main{
     margin: 0;
     display: inline-block;
     position: relative;
 }
 
-figcaption{
+.img-main-hover{
     display: none;
     background: rgba(0, 255, 247, 0.3);
     position: absolute;
     padding: 129px 131px;
     bottom: 13px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-figure:hover figcaption{
+.img-main:hover .img-main-hover{
     display: block;
 }
 
 h2{
+    font-size: 21px;
     color: #ffff;
-    margin: 15px 0;
+    margin: 9px 0;
 }
 
 p{
-    font-weight: 300px;
+    font-size: 18px;
     color: var(--primary-soft);
     margin: 5px 0 5px 0;
     font-weight: lighter;
@@ -96,6 +97,7 @@ a{
 .price{
     color: var(--primary-cyan);
     vertical-align: middle;
+    font-weight: bold;
 }
 
 .price > i{
@@ -114,6 +116,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    font-size: 14.3px;
 }
 
 #line{
@@ -123,7 +126,7 @@ a{
     width: 100%;
 }
 
-.container-user > h4{
+.container-user > h3{
     color: var(--primary-soft);
     margin: 5px 30px 0 15px;
     font-weight: normal;
@@ -132,7 +135,7 @@ a{
 .profile{
     margin-top: 10px;
     border-radius: 50%;
-    width: 40px;
+    width: 35px;
     border: 2px solid #ffff;
 }
 
@@ -153,8 +156,13 @@ a:hover{
     color: hsl(228, 45%, 44%); 
 }
 
+footer {
+    position: relative;
+    top: 10px;
+}
+
 /* MOBILE */
-@media  screen and (max-width: 375px){
+@media screen and (max-width: 375px){
     
     .card{
         padding: 5%;
